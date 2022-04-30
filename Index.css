@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+
+body{
+    background: linear-gradient(42.10deg, #0c1010 47.82%, #17282b 60%, #0f1e20 20.61%);
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+   
+
+}
+
+.logo{
+    transform: scale(1);
+    padding:4px ;
+    transition: 2s;
+    border: 2px solid;
+    border-radius: 5px 5px 5px 2px;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.logo:hover{
+    transform: scale(0.9);
+    padding:5px;
+    border: 5px solid;
+    border-radius: 8px 8px 8px 3px;
+    cursor: pointer;
+    transition: 2s;
+    color: #1bcfe7;
+    box-shadow:
+                 0 0 50px #1bcfe7,
+                 0 0 100px #1bcfe7,
+                 0 0 150px #ffffff,
+                 0 0 550px #000000;
+              
+                 animation: animate 5s linear infinite;
+    
+    
+}
+
+@keyframes animate
+ {
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(50deg);
+
+    }
+    
+}
+
+
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    gap: 15px;
+    
+
+    
+}
+
+.navbar{
+    display: flex;
+    gap: 5px;
+    
+   
+}
+
+nav a{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+    transform: scale(0.9); /* Igual a scaleX(2) scaleY(0.5) */
+    
+    
+}
+
+nav a:hover{
+    transition: 1000ms;
+    box-shadow: 2px 2px 3px 3px #1bcfe7;    /* Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow */
+	transform: scale(0.8);
+    border-radius: 15px 15px 15px 5px;
+    color: #1bcfe7;
+}
+
+nav a:active{
+    transition: 100ms;
+    transform: scale(0.7);
+    box-shadow: 6px 6px 10px 10px #1bcfe7;    /* Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow */
+}
+
+
+
+/*Parte do CSS main*/
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+
+
+
+
+
+}
+
+
